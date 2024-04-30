@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { PublicComponent } from "./layout/public/public.component";
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+    selector: 'app-root',
+    standalone: true,
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.css',
+    imports: [PublicComponent]
 })
 export class AppComponent {
-  title = 'angular-landing-page-01';
+  title = 'angular-17-standalone-porfolio-landing-template-01';
 }

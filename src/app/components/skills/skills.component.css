@@ -1,0 +1,31 @@
+.skills-container {
+	background-color: #070D1B;
+	color: #fff;
+	padding: 50px;
+	text-align: center;
+ 
+	.skill {
+	  margin-bottom: 20px;
+ 
+	  .skill-name {
+		 float: left;
+		 margin-right: 20px;
+	  }
+ 
+	  .progress {
+		 background-color: #333;
+		 border-radius: 20px;
+		 height: 20px;
+ 
+		 .progress-bar {
+			background-color: #DC3444; 
+			height: 20px;
+			line-height: 20px;
+			text-align: right;
+			padding-right: 10px;
+			border-radius: 20px;
+		 }
+	  }
+	}
+ }
+ 

@@ -1,0 +1,11 @@
+<div class="container skills-container">
+	<h2>My Skills</h2>
+	<p class="mb-4">All the skills that I have in that field of work are mentioned.</p>
+	<div *ngFor="let skill of skills$ | async" class="skill">
+	  <div class="skill-name">{{ skill.name }}</div>
+	  <div class="progress">
+		 <div class="progress-bar" role="progressbar" [style.width]="skill.percentage + '%'"  aria-valuemin="0" aria-valuemax="100">{{ skill.percentage }}%</div>
+	  </div>
+	</div>
+ </div>
+ 

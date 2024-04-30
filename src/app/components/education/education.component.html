@@ -1,0 +1,14 @@
+<div class="education-section">
+	<h2 class="text-center">Education</h2>
+	<div *ngFor="let education of educationHistory$ | async">
+	  <div class="mb-3">
+			<h5 class="text-danger">{{ education.degree }} in {{ education.fieldOfStudy }}</h5>
+			<h6 class="mb-2 text-secondary">{{ education.institution }}</h6>
+			<p >{{ education.startDate }} - {{ education.endDate }}</p>
+			<ul>
+			  <li class="text-secondary" *ngFor="let detail of education.details">{{ detail }}</li>
+			</ul>	
+	  </div>
+	</div>
+ </div>
+ 

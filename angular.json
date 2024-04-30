@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-landing-page-01": {
+    "angular-17-standalone-porfolio-landing-template-01": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/angular-landing-page-01",
+            "outputPath": "dist/angular-17-standalone-porfolio-landing-template-01",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -25,6 +25,8 @@
               "src/assets"
             ],
             "styles": [
+				  "node_modules/bootstrap/dist/css/bootstrap.min.css",
+				  "node_modules/bootstrap-icons/font/bootstrap-icons.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -57,10 +59,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angular-landing-page-01:build:production"
+              "buildTarget": "angular-17-standalone-porfolio-landing-template-01:build:production"
             },
             "development": {
-              "buildTarget": "angular-landing-page-01:build:development"
+              "buildTarget": "angular-17-standalone-porfolio-landing-template-01:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -68,7 +70,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "angular-landing-page-01:build"
+            "buildTarget": "angular-17-standalone-porfolio-landing-template-01:build"
           }
         },
         "test": {

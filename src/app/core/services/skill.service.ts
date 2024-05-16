@@ -17,5 +17,4 @@ export class SkillService {
 	];
 	return of(skills);
  }
-
 }
